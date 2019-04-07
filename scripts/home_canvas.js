@@ -6,9 +6,6 @@ var mouse = new THREE.Vector3();
 var cameraPosX = 0;
 var cameraPosY = 0;
 
-var cameraPosYPLUS = .02;
-var mouseCounter = 0;
-
 var windowW = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 var windowH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -48,6 +45,15 @@ for (var i = 0; i < 10000; i ++) {
 var starsMaterial = new THREE.PointsMaterial({color: Math.random() <= 0.5 ? 0x000000 : 0xf85153});
 var starField = new THREE.Points(starsGeometry, starsMaterial);
 scene.add(starField);
+
+$(document).ready(function() {
+
+	if (windowW >= 320 && windowW<= 480) {
+
+		console.log("remove");
+		scene.remove(starField);
+	}
+});
 
 var video1 = document.getElementById("video1");
 var video2 = document.getElementById("video2");
