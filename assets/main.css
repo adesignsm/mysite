@@ -613,7 +613,7 @@ a:hover {
 	}
 
 	#about-page button {
-		top: 170%;
+		top: 250%;
 		margin-bottom: 10%;
 		right: 30%;
 	}
@@ -628,7 +628,7 @@ a:hover {
 	}
 
 	#projects-container {
-		top: 140%;
+		top: 200%;
 	}
 
 	#projects-container p {
