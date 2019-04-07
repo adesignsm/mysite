@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> ADM | Design meets Development </title>
+		
+		<meta charset="UTF-8">
+	    <meta name="description" content="Adesignsm, Where design meets development. A web development portfolio by Akash Mulye">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript, THREE.js, JQuery, php, Node.js, Angular.js, AJAX">
+		<meta name="author" content="Akash Mulye">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--STYLESHEETS-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel = "stylesheet" type = "text/css" href = "assets/main.css" />
+
+		<!--IMPORTED LIBRARIES-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type = "text/javascript" src = "scripts/main.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+        <script type = "text/javascript" src = "scripts/contact.js"></script>
+	</head>
+
+	<body>
+		<!--VIDEOS FOR 3D TEXTURES-->
+		<video id = "video1" autoplay loop style = "display: none" crossOrigin = "anonymous">
+			<source src = "snippets/video1.mp4" type = "video/mp4">
+		</video>
+
+		<video id = "video2" autoplay loop style = "display: none" crossOrigin = "anonymous">
+			<source src = "snippets/video2.mp4" type = "video/mp4">
+		</video>
+
+		<video id = "video3" autoplay loop style = "display: none" crossOrigin = "anonymous">
+			<source src = "snippets/video3.mp4" type = "video/mp4">
+		</video>
+
+		<!--WEBGL THREE.JS SCRIPTS-->
+		<script type = "text/javascript" src = "scripts/three.js"></script>
+		<script type = "text/javascript" src = "scripts/OrbitControls.js"></script>
+
+		<script type = "text/javascript" src = "scripts/CopyShader.js"></script>
+		<script type = "text/javascript" src = "scripts/EffectComposer.js"></script>
+		<script type = "text/javascript" src = "scripts/RenderPass.js"></script>
+		<script type = "text/javascript" src = "scripts/ShaderPass.js"></script>
+		<script type = "text/javascript" src = "scripts/DigitalGlitch.js"></script>
+		<script type = "text/javascript" src = "scripts/GlitchPass.js"></script>
+
+		<!--LOADING PAGE-->
+		<div id = "loading-page">
+			<script type = "text/javascript" src = "scripts/loading.js"></script>
+		</div>
+		
+		<h3 id = "home-logo"> Adm </h3>
+		<h3 id = "menu-logo"> menu </h3>
+
+		<!--MAIN CONTENT-->
+		<div id = "wrapper" class = ".container-fluid">
+			<!--PROJECTS 1 THROUGH 3 SNIPPETS-->
+			<div id = "project1-canvas-container">
+				<div id = "proj1-blurb">
+					<h1> Today is 3D </h1>
+					<p> This project was made using html, css, and JavScript. Majority of the WebGL content was rendered using THREE.js. The idea behind this project was to initialize user interactions with 3D objects on a web page. I made this project so that I can implement the methods in future projects. It is simple but it comes packed with alot of things like mouse over events and dragging events, all while being used on 3D objects.
+					</p>
+
+					<a href = "https://hardworking-pilot.cloudvent.net"> <button id = "proj1-button"> Live Demo </button> </a>
+				</div>
+
+				<script type = "text/javascript" src = "scripts/proj1-canvas.js"></script>
+			</div>
+
+			<div id = "project2-canvas-container">
+				<div id = "proj2-blurb">
+					<h1> Movie Database Project </h1>
+					<p> This project was created using AJAX to make calls to the database, Its main functionality is to pull data from the movie API based on the users input in the search field and displays now playing movies that match the word the user has entered or any movies that include the letters that the user has entered. Used HTML and CSS to structure and style the page along with some jquery for animations, and used AJAX to pull data out of the movie API.
+					</p>
+
+					<a href = "https://hip-magpie.cloudvent.net"> <button id = "proj2-button"> Live Demo </button> </a>
+				</div>
+
+				<script type = "text/javascript" src = "scripts/proj2-canvas.js"></script>
+			</div>
+
+			<div id = "project3-canvas-container">
+				<div id = "proj3-blurb">
+					<h1> A ToDo List </h1>
+					<p> This project has been created using Node.js, body parsing to parse data, and express. This app has some implementation of AJAX to post and delete tasks from the unordered list elements. A user types in a task and then hits the add task button, the task is then added. Upon hover there is a color animation and once it is clicked the task is deleted. 
+					</p>
+
+					<a href = "https://calm-shelf-13390.herokuapp.com/todo"> <button id = "proj3-button"> Live Demo </button> </a>
+				</div>
+
+				<script type = "text/javascript" src = "scripts/proj3-canvas.js"></script>
+			</div>
+
+			<!--MENU PAGE-->
+			<div id = "menu-page">
+				<div id = "menu-line-effect"></div>
+				<div id = "menu-close"></div>
+				<ul>
+					<li id = "about-li"> About Adm </li>
+					<li id = "projects-li"> Projects </li>
+					<li id = "contact-li"> Contact </li>
+				</ul>
+			</div>
+
+			<!--HOME PAGE-->
+			<div id = "home-page">
+				<div id = "home-page-blurb">
+	 				<h1> <span id = "home-page-span1">A</span> <span id = "home-page-span2">D</span>ESIGNS <span id = "home-page-span3">M</span>. </h1>
+	 				<p class = "font-weight-lighter"> A designs M. A means of displaying the connections between design and development through hand coded visuals and designs. </br> </br> A designs M and M designs A. </p>
+	 			</div>
+
+	 			<script type = "text/javascript" src = "scripts/home_canvas.js"></script>
+			</div>
+
+			<!--ABOUT PAGE-->
+			<div id = "about-page">
+				<div id = "about-page-blurb">
+					<h1> About Me </h1>
+					<p> My name is Akash Mulye, I began programming and studying design in grade 12. I quickly gained interest in front end web developing/designing scene and it became my greatest passion. Being self taught in front end development I had free reign to practice and explore the fundamentals and the more intricate spectors of this field. After 2 years I decided make an alias for my web work known as AdesignsM, while it is a completely different entity from me it is still a huge part of who I am. AdesignsM is Akash designs Mulye the idea of first name is nothing without its last name and vice versa, same thing with design and development. I now look forward to finding a role in the industry where I can bring my expertise and grow from there.</p>
+				</div>
+
+				<a href = "https://docs.google.com/document/d/1SF6x3GBo5nf1PeBBnhAWFO-4_ZE_RclinaqrY01YvRE/edit?usp=sharing"> <button> View My Resume </button></a>
+
+				<script type = "text/javascript" src = "scripts/about-canvas.js"></script>
+			</div>
+
+			<!--PROJECTS PAGE-->
+			<div id = "projects-page">
+				<div id = "projects-page-blurb">
+					<h1> My Projects </h1>
+
+					<p> Here are some of my recent projects that I have worked on through out the past couple months. There is a github link at the bottom of this page that links to alot more of my work that I did not include here. </p>
+				</div>
+
+				<div id = "projects-container">
+					<div id = "TI3-container">
+						<h1> Today Is 3D </h1>
+
+						<p> This project was made using html, css, and JavScript. Majority of the WebGL content was rendered using THREE.js. The idea behind this project was to initialize user interactions with 3D objects on a web page. I made this project so that I can implement the methods in future projects. It is simple but it comes packed with alot of things like mouse over events and dragging events, all while being used on 3D objects.
+						</p>
+
+						<img src = "snippets/pic1.png" alt = "Today is 3D website"/>
+						 <a href = "https://hardworking-pilot.cloudvent.net"><button> Live Demo  </button></a>	
+					</div>
+
+					<div id = "TDL-container">
+						<h1> A ToDo List </h1>
+
+						<p> This project has been created using Node.js, body parsing to parse data, and express. This app has some implementation of AJAX to post and delete tasks from the unordered list elements. A user types in a task and then hits the add task button, the task is then added. Upon hover there is a color animation and once it is clicked the task is deleted. 
+						</p>
+
+						<img src = "snippets/pic2.png" alt = "Todo List website"/>
+						<a href = "https://calm-shelf-13390.herokuapp.com/todo"><button>  Live Demo </button> </a>
+					</div>
+
+					<div id = "MDP-container">
+						<h1> Movie Database Project </h1>
+
+						<p> This project was created using AJAX to make calls to the database, Its main functionality is to pull data from the movie API based on the users input in the search field and displays now playing movies that match the word the user has entered or any movies that include the letters that the user has entered. Used HTML and CSS to structure and style the page along with some jquery for animations, and used AJAX to pull data out of the movie API.
+						</p>
+
+						<img src = "snippets/pic3.png" alt = "Movie Database website"/>
+						<a href = "https://hip-magpie.cloudvent.net"><button> Live Demo </button></a>
+					</div>
+
+					<button id = "git-btn"> <a href = "http://github.com/freakolope"> My Github </a> </button>
+					<a href = "http://instagram.com/adesignsm"><button id = "ig-btn"> Web Design Instagram  </button></a>
+				</div>
+			</div>
+
+			<!--CONTACT PAGE-->
+			<div id = "contact-page">
+				<h1> Contact Me </h1>
+				<!--<form id = "contact-form" method = "post" action = "scripts/contact.php" role = "form">-->
+				<!--    <div class = "messages"></div>-->
+
+				<!--    <div class = "controls">-->
+
+				<!--        <div class = "row">-->
+				<!--            <div class = "col-md-6">-->
+				<!--                <div class = "form-group">-->
+				<!--                    <label for = "form_name"> Firstname * </label>-->
+				<!--                    <input id = "form_name" type = "text" name = "name" class = "form-control" placeholder = "Please enter your firstname *" required = "required" data-error = "Firstname is required.">-->
+				<!--                    <div class = "help-block with-errors"></div>-->
+				<!--                </div>-->
+				<!--            </div>-->
+				<!--            <div class = "col-md-6">-->
+				<!--                <div class = "form-group">-->
+				<!--                    <label for = "form_lastname"> Lastname * </label>-->
+				<!--                    <input id = "form_lastname" type = "text" name = "surname" class = "form-control" placeholder = "Please enter your lastname *" required = "required" data-error = "Lastname is required.">-->
+				<!--                    <div class = "help-block with-errors"></div>-->
+				<!--                </div>-->
+				<!--            </div>-->
+				<!--        </div>-->
+				<!--        <div class = "row">-->
+				<!--            <div class = "col-md-6">-->
+				<!--                <div class = "form-group">-->
+				<!--                    <label for = "form_email"> Email * </label>-->
+				<!--                    <input id = "form_email" type = "email" name = "email" class = "form-control" placeholder = "Please enter your email *" required = "required" data-error = "Valid email is required.">-->
+				<!--                    <div class = "help-block with-errors"></div>-->
+				<!--                </div>-->
+				<!--            </div>-->
+				<!--        </div>-->
+				<!--        <div class = "row">-->
+				<!--            <div class = "col-md-12">-->
+				<!--                <div class = "form-group">-->
+				<!--                    <label for = "form_message"> Message * </label>-->
+				<!--                    <textarea id = "form_message" name = "message" class = "form-control" placeholder = "Message for me *" rows = "4" required = "required" data-error = "Please, leave us a message."></textarea>-->
+				<!--                    <div class = "help-block with-errors"></div>-->
+				<!--                </div>-->
+				<!--            </div>-->
+				<!--            <div class = "col-md-12">-->
+				<!--                <input id = "send-btn" type = "submit" class = "btn btn-success btn-send" value = "Send message">-->
+				<!--            </div>-->
+				<!--        </div>-->
+				<!--    </div>-->
+				<!--</form>-->
+				<a href = "mailto:akashmulye97@gmail.com?subject = Feedback&body = Message"><button id = "mail-btn"> Email Me </button> </a>
+			</div>
+		</div>
+	</body>
+</html>
