@@ -23,6 +23,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
         <script type = "text/javascript" src = "scripts/contact.js"></script>
+        <script type = "text/javascript" src = "scripts/scroll.js"></script>
 	</head>
 
 	<body>
@@ -51,12 +52,12 @@
 		<script type = "text/javascript" src = "scripts/GlitchPass.js"></script>
 
 		<!--LOADING PAGE-->
-		<div id = "loading-page">
+<!-- 		<div id = "loading-page">
 			<script type = "text/javascript" src = "scripts/loading.js"></script>
-		</div>
+		</div> -->
 		
-		<h3 id = "home-logo"> Adm </h3>
-		<h3 id = "menu-logo"> menu </h3>
+		<h3 class = ".menu-icons" id = "home-logo"> Adm </h3>
+		<h3 class = ".menu-icons" id = "menu-logo"> menu </h3>
 
 		<!--MAIN CONTENT-->
 		<div id = "wrapper" class = ".container-fluid">
@@ -169,8 +170,10 @@
 						<a href = "https://hip-magpie.cloudvent.net"><button> Live Demo </button></a>
 					</div>
 
-					<button id = "git-btn"> <a href = "http://github.com/freakolope"> My Github </a> </button>
-					<a href = "http://instagram.com/adesignsm"><button id = "ig-btn"> Web Design Instagram  </button></a>
+					<div id = "git-ig-btns">
+						<button id = "git-btn"> <a href = "http://github.com/freakolope"> My Github </a> </button>
+						<a href = "http://instagram.com/adesignsm"><button id = "ig-btn"> Web Design Instagram  </button></a>
+					</div>
 				</div>
 			</div>
 

@@ -209,7 +209,7 @@ body, html {
 }
 
 #menu-page {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: -100%;
 	height: 100%;
@@ -288,6 +288,7 @@ body, html {
 
 #home-page-blurb {
 	position: absolute;
+	height: 100%;
 	top: 10%;
 	margin-left: 3%;
 	z-index: 2;
@@ -588,8 +589,8 @@ a:hover {
 @media (min-width: 320px) and (max-width: 480px) { /*MOBILE*/
   
 	#home-page-blurb h1 {
-		margin-top: -15%;
-		margin-bottom: 5%;
+		margin-top: 3%;
+		margin-bottom: 100%;
 		text-align: center;
 		font-size: 500%;
 	}
@@ -612,7 +613,8 @@ a:hover {
 	}
 
 	#about-page button {
-		top: 90%;
+		top: 125%;
+		margin-bottom: 10%;
 		right: 30%;
 	}
 
@@ -621,11 +623,12 @@ a:hover {
 	}
 
 	#projects-page-blurb p {
+		padding-right: 2%;
 		width: 100%;
 	}
 
 	#projects-container {
-		top: 80%;
+		top: 100%;
 	}
 
 	#projects-container p {
@@ -659,6 +662,12 @@ a:hover {
 
 	#projects-container img {
 		width: 100%;
+	}
+
+	#git-ig-btns {
+		position: absolute;
+		top: 120%;
+		margin-bottom: 5%;
 	}
   
 }
