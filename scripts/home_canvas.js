@@ -52,6 +52,10 @@ $(document).ready(function() {
 
 		console.log("remove");
 		scene.remove(starField);
+	
+	} else {
+
+		scene.add(starField);
 	}
 });
 
