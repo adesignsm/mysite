@@ -587,6 +587,30 @@ a:hover {
 
 /*MEDIA QUERY*/
 @media (min-width: 320px) and (max-width: 480px) { /*MOBILE*/
+
+	#proj1-blurb h1 {
+		margin-bottom: 5%;
+	}
+
+	#proj1-blurb p {
+		width: 100%;
+	}
+
+	#proj2-blurb h1 {
+		margin-bottom: 5%;
+	}
+
+	#proj2-blurb p {
+		width: 100%;
+	}
+
+	#proj3-blurb h1 {
+		margin-bottom: 5%;
+	}
+
+	#proj3-blurb p {
+		width: 100%;
+	}
   
 	#home-page-blurb h1 {
 		margin-top: 3%;
@@ -668,6 +692,10 @@ a:hover {
 		position: absolute;
 		top: 120%;
 		margin-bottom: 5%;
+	}
+
+	#mail-btn {
+		top: 50%;
 	}
   
 }

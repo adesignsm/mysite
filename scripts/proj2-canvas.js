@@ -46,6 +46,19 @@ function proj2Canvas() {
 	var video2Plane = createVideoMesh2(new THREE.PlaneGeometry(10, 7, 1));
 	scene.add(video2Plane);
 
+	$(document).ready(function() {
+
+		if (windowW >= 320 && windowW<= 480) {
+
+			scene.remove(video2Plane);
+		
+		} else {
+
+			scene.add(video2Plane);
+		}
+	});
+
+
 	document.addEventListener("mousemove", onMouseMove, false);
 
 	function onMouseMove(event) {
